@@ -139,3 +139,13 @@ alias llt="exa -1 --icons --tree"
 
 ### Java Config ###
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+
+### Make printing path better
+alias path="echo -e '${PATH//:/\\n}'"
+
+### Browser Search Alias
+alias "?"=duck
+alias "???"=google
+
+# After each command, save and reload history
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
