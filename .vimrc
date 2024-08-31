@@ -1,3 +1,9 @@
+"      _                    
+"__   _(_)_ __ ___  _ __ ___ 
+"\ \ / / | '_ ` _ \| '__/ __|
+" \ V /| | | | | | | | | (__ 
+"(_)_/ |_|_| |_| |_|_|  \___|
+                            
 " Map jk to escape
 inoremap jk <Esc>
 " Deactivate line numbers
