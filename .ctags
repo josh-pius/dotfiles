@@ -1,0 +1,2 @@
+--recurse=true
+--exclude=.git
