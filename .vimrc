@@ -57,6 +57,12 @@ syntax on
 " set cursorline
 " :highlight CursorLine ctermbg=grey
 
+"Default color scheme for vimdiff
+if &diff
+    colorscheme mycolorscheme
+endif
+
+
 " ################ Set tabstop, softtabstop and shiftwidth to the same value ################
 " http://vimcasts.org/episodes/tabs-and-spaces/
 
