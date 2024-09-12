@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+ln -sf "$PWD/.inputrc" "$HOME/.inputrc"
+
+for i in vim tmux; do
+    cd $i && ./setup
+    cd -
+done

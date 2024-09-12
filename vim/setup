@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [[ -z "$(which vim)" || -z "$(which vimtutor)" ]]; then
+  echo "Warning, doesn't look like you have full Vim version."
+fi
+
+ln -sf "$PWD/vimrc" "$HOME/.vimrc"
+mkdir -p "$HOME/.vim/autoload"
+ln -sf "$PWD/plug.vim" "$HOME/.vim/autoload/plug.vim"
+
+mkdir -p "$HOME/.vim/colors"
+ln -sf "$PWD/mycolorscheme.vim" "$HOME/.vim/colors/mycolorscheme.vim"
