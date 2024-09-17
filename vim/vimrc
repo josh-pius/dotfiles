@@ -94,4 +94,11 @@ function! SummarizeTabs()
     endtry
 endfunction
 
-" ################################################################################## 
+" ##################################################################################
+
+" I haven
+augroup custom_foldmethod
+	autocmd!
+	autocmd Filetype json set foldmethod=syntax
+augroup END 
+
