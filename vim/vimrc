@@ -184,3 +184,11 @@ set listchars+=nbsp:_
 
 " Fix spaces command
 command! FixSpaces %s/\%u00A0\|\%u2000-\%u200A\|\%u202F\|\%u3000/ /g
+" ##################################################################################
+
+" I haven
+augroup custom_foldmethod
+	autocmd!
+	autocmd Filetype json set foldmethod=syntax
+augroup END 
+
